@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Proxygram</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Proxygram</h1>
+    <% if (!(env.client_id && env.client_secret && env.destination_url)) { %>
+      <h1>You need to complete the setup!</h1>
+      <p>
+        Please refer to the
+        <a href="https://github.com/fzero/proxygram/blob/master/README.md">documentation</a>.
+        You need to define <code>CLIENT_ID</code>, <code>CLIENT_SECRET</code> and <code>DESTINATION_URL</code> to get started.
+      </p>
+    <% } else { %>
+      <p>
+        Up and running.
+      </p>
+    <% } %>
+  </body>
+</html>
