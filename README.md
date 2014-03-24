@@ -7,7 +7,7 @@ Instagram's subscription pushes only alert of the **existence** of new pictures 
 
 Proxygram can also be used to break free from Instagram's 30 geo-subscriptions limit. All you have to do is use multiple Proxygram instances sending pictures to the same endpoint.
 
-## Configuration
+## Setup
 
 1. Register a new app at [instagram.com/developer/clients/manage](http://instagram.com/developer/clients/manage/). You can call it anything, as long as it doesn't include the word 'Instagram' (yep, I'm serious).
 2. In **Website URL**, enter the URL where Proxygram is running (hint: you can run it for free on Heroku).
@@ -28,6 +28,8 @@ Optional settings:
 * `VERIFY_TOKEN` - A challenge string sent to Instagram to validate the identity of the app when a subscription is made. A default value is provided, but it will be overridden by this. [More information here.](http://instagram.com/developer/realtime/)
 
 If everything went right, you'll see **up and running** when visiting the root URL on Proxygram. The configuration will also be logged for reference.
+
+A `Procfile` is provided, so Proxygram can be pushed to [Heroku](http://heroku.com) right away. An example `.env` file is also included to make development easier under [Foreman](https://github.com/ddollar/foreman)/[Norman](https://github.com/josh/norman)/[Shoreman](https://github.com/hecticjeff/shoreman). Just put your environment configurations there and the app will read them automagically.
 
 ## Creating a subscription
 
