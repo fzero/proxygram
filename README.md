@@ -5,7 +5,7 @@ Proxygram is an Instagram subscription proxy, created to make it simpler to proc
 
 Instagram's subscription pushes only alert of the **existence** of new pictures to download. Proxygram fills in the blanks by actually **fetching** picture data and pushing it to your application. Everything is done asynchronously (thanks to node.js) and without any additional dependencies.
 
-Proxygram can also be used to subscribe to break free from Instagram's 30 geo-subscriptions limit. All you have to do is use multiple Proxygram instances sending pictures to the same endpoint.
+Proxygram can also be used to break free from Instagram's 30 geo-subscriptions limit. All you have to do is use multiple Proxygram instances sending pictures to the same endpoint.
 
 ## Configuration
 
