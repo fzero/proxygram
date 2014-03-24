@@ -54,7 +54,7 @@ To delete a subscription, POST the subscription id (returned by Instagram during
 
 ## Picture push format
 
-Once a subscription is made, Proxygram will immediately start to receive pushes and forward pictures to `DESTINATION_URL`. Each picture push has the following format:
+Once a subscription is made, Proxygram will immediately start to receive pushes and POST picture data to `DESTINATION_URL`. Each picture push has the following format:
 
     {
       object: 'geography',
