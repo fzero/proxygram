@@ -72,7 +72,7 @@ Once a subscription is made, Proxygram will immediately start to receive pushes 
       ]
     }
 
-Where `object_id` is the value returned by Instagram the subscription endpoint. The picture data follows the same format returned by Instagram on the `/media` API endpoint. [Docs here](http://instagram.com/developer/endpoints/media/).
+Where `object_id` is the value returned by the Instagram subscription endpoint. Picture data follows the same format returned by Instagram on the `/media` API endpoint. [Docs here](http://instagram.com/developer/endpoints/media/).
 
 ## To do
 
